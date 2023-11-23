@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hamster Hotel</title>
+    <title>Custom Navbar</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Dosis">
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Source Sans Pro'>
@@ -16,13 +16,13 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <a href="#overview" class="nav-item" id="overview">Overview</a>
-        <a href="#room" class="nav-item" id="room">Room</a>
-        <a href="#package" class="nav-item" id="package">Package</a>
+        <a href="#overviewNav" class="nav-item" id="overview">Overview</a>
+        <a href="#roomNav" class="nav-item" id="room">Room</a>
+        <a href="#packageNav" class="nav-item" id="package">Package</a>
         <div id="logo"></div>
-        <a href="#amenities" class="nav-item" id="amenities">Amenities</a>
-        <a href="#contact" class="nav-item" id="contact">Contact</a>
-        <a href="#reserve" class="nav-item" id="reserve">Reserve</a>
+        <a href="#amenitiesNav" class="nav-item" id="amenities">Amenities</a>
+        <a href="#contactNav" class="nav-item" id="contact">Contact</a>
+        <a href="#reserveNav" class="nav-item" id="reserve">Reserve</a>
     </div>
 
     <!--  first image -->
@@ -36,154 +36,168 @@
 
     <!-- Overview-->
     <!-- Picture with properties -->
-    <img src="Images/hamsterhomejpg.jpg" alt="description" id="bodyImage">
+    <div id="overviewNav">
+        <img src="Images/hamsterhomejpg.jpg" alt="description" id="bodyImage">
 
-    <!-- Text with properties -->
-    <div id="welcomeText">Welcome to a hamster's paradise</div>
+        <!-- Text with properties -->
+        <div id="welcomeText">Welcome to a hamster's paradise</div>
 
-    <!-- Paragraph with properties -->
-    <p id="paragraph">
-        Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed for the small mammal with
-        extravagance in mind. Escape to the warm comforts of stunning rooms, a relaxing spa, and a pool with a beach
-        side view. <br>
-        <br>
-        Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich accommodations along with
-        our unmatched luxury. Discover the satisfaction of indulging in our quality rooms, and thank you for choosing La
-        Petite Maison.
-    </p>
-
-    <!-- Logos with properties -->
-    <img id="logo1" src="Images/awardfinest.png" alt="Scaled Image 1">
-    <img id="logo2" src="Images/awardsatisfaction.png" alt="Scaled Image 2">
-    <img id="logo3" src="Images/awardgenuine.png" alt="Scaled Image 3">
-
+        <!-- Paragraph with properties -->
+        <p id="paragraph">
+            Nestled in the heart of Cavia California, La Petite Maison is a luxury hotel designed for the small mammal
+            with
+            extravagance in mind. Escape to the warm comforts of stunning rooms, a relaxing spa, and a pool with a beach
+            side view. <br>
+            <br>
+            Inspired by the warm beauty of the California Coast, we invite you to enjoy the rich accommodations along
+            with
+            our unmatched luxury. Discover the satisfaction of indulging in our quality rooms, and thank you for
+            choosing La
+            Petite Maison.
+        </p>
+        <!-- Logos with properties -->
+        <img id="logo1" src="Images/awardfinest.png" alt="Scaled Image 1">
+        <img id="logo2" src="Images/awardsatisfaction.png" alt="Scaled Image 2">
+        <img id="logo3" src="Images/awardgenuine.png" alt="Scaled Image 3">
+    </div>
     <!-- Rooms -->
-    <img src="Images/bg2.jpg" alt="Second picture" id="secondImage">
-    <div id="ourRoomText">Our Rooms</div>
+    <div id="roomNav">
+        <img src="Images/bg2.jpg" alt="Second picture" id="secondImage">
+        <div id="ourRoomText">Our Rooms</div>
 
-    <!-- First Card on Second Image -->
-    <div class="card" id="secondImageFirstCard">
-        <img src="Images/room1.jpg" alt="Queen Room" id="secondImageFirstCardImage">
-        <div id="secondImageQueenRoomText">Queen Room</div>
-        <div id="secondImageRoomDetails">
-            850 SQ FT room with city view
+        <!-- First Card on Second Image -->
+        <div class="card" id="secondImageFirstCard">
+            <img src="Images/room1.jpg" alt="Queen Room" id="secondImageFirstCardImage">
+            <div id="secondImageQueenRoomText">Queen Room</div>
+            <div id="secondImageRoomDetails">
+                850 SQ FT room with city view
+            </div>
+            <div id="secondImageList">
+                <ul>
+                    <li>One queen size bed</li>
+                    <li>Seed Bar, fireplace and large balcony</li>
+                    <li>Small kitchen with a refrigerator and stove</li>
+                </ul>
+            </div>
+            <button id="secondImageReserveButton">Reserve</button>
         </div>
-        <div id="secondImageList">
-            <ul>
-                <li>One queen size bed</li>
-                <li>Seed Bar, fireplace and large balcony</li>
-                <li>Small kitchen with a refrigerator and stove</li>
-            </ul>
+        <!-- Second Card on Second Image -->
+        <div class="card" id="secondImageSecondCard">
+            <img src="Images/room3.jpg" alt="King Room" id="secondImageSecondCardImage">
+            <div id="secondImageKingRoomText">King Room</div>
+            <div id="secondImageRoomDetails">
+                950 SQ FT room with ocean view
+            </div>
+            <div id="secondImageList">
+                <ul>
+                    <li>One king size bed</li>
+                    <li>Seed Bar, fireplace and large balcony</li>
+                    <li>Small kitchen with a refrigerator and stove</li>
+                </ul>
+            </div>
+            <button id="secondImageReserveButton">Reserve</button>
         </div>
-        <button id="secondImageReserveButton">Reserve</button>
+        <!-- Third Card on Second Image -->
+        <div class="card" id="secondImageThirdCard">
+            <img src="Images/room2.jpg" alt="Double Room" id="secondImageThirdCardImage">
+            <div id="secondImageDoubleRoomText">Beach Side Suite</div>
+            <div id="secondImageRoomDetails">
+                1500 SQ FT room with beach view
+            </div>
+            <div id="secondImageList">
+                <ul>
+                    <li>One California king size bed</li>
+                    <li>Second room with fireplace, hot tub, and balcony</li>
+                    <li>Seed Bar and coffee station</li>
+                    <li>Full kitchen with a refrigerator,stove, and island</li>
+                </ul>
+            </div>
+            <button id="secondImageReserveButton">Reserve</button>
+        </div>
     </div>
-    <!-- Second Card on Second Image -->
-    <div class="card" id="secondImageSecondCard">
-        <img src="Images/room3.jpg" alt="King Room" id="secondImageSecondCardImage">
-        <div id="secondImageKingRoomText">King Room</div>
-        <div id="secondImageRoomDetails">
-            950 SQ FT room with ocean view
-        </div>
-        <div id="secondImageList">
-            <ul>
-                <li>One king size bed</li>
-                <li>Seed Bar, fireplace and large balcony</li>
-                <li>Small kitchen with a refrigerator and stove</li>
-            </ul>
-        </div>
-        <button id="secondImageReserveButton">Reserve</button>
-    </div>
-    <!-- Third Card on Second Image -->
-    <div class="card" id="secondImageThirdCard">
-        <img src="Images/room2.jpg" alt="Double Room" id="secondImageThirdCardImage">
-        <div id="secondImageDoubleRoomText">Beach Side Suite</div>
-        <div id="secondImageRoomDetails">
-            1500 SQ FT room with beach view
-        </div>
-        <div id="secondImageList">
-            <ul>
-                <li>One California king size bed</li>
-                <li>Second room with fireplace, hot tub, and balcony</li>
-                <li>Seed Bar and coffee station</li>
-                <li>Full kitchen with a refrigerator,stove, and island</li>
-            </ul>
-        </div>
-        <button id="secondImageReserveButton">Reserve</button>
-    </div>
-
 
     <!-- Packages-->
 
     <div class="transparent-box">
-        <div class="packages-text">Packages</div>
+        <div id="packageNav">
+            <div class="packages-text">Packages</div>
 
-        <!-- First Image -->
-        <img class="package-image" src="Images/hamsterwedding.jpg" alt="Beach Wedding">
+            <!-- First Image -->
+            <img class="package-image" src="Images/hamsterwedding.jpg" alt="Beach Wedding">
 
-        <!-- Texts -->
-        <div class="package-title">Beach Wedding Package</div>
-        <div class="package-price">Starting US $1,500.00</div>
-        <div class="package-description">
-            Feel the warmth of the beach as the flames in your hearts ignite during our romantic beach side wedding.
-            All wedding packages include catering, an open bar, and one tier wedding cake (9" Vanilla standard cake).
-            A private dinner for your closets family members and friends will be provided after the ceremony.
-        </div>
+            <!-- Texts -->
+            <div class="package-title">Beach Wedding Package</div>
+            <div class="package-price">Starting US $1,500.00</div>
+            <div class="package-description">
+                Feel the warmth of the beach as the flames in your hearts ignite during our romantic beach side wedding.
+                All wedding packages include catering, an open bar, and one tier wedding cake (9" Vanilla standard
+                cake).
+                A private dinner for your closets family members and friends will be provided after the ceremony.
+            </div>
+            <!-- Second Image -->
+            <!-- Texts -->
+            <div class="second-package-title">Full Bloom Package</div>
+            <div class="second-package-price">Starting US $1,000.00</div>
+            <div class="second-package-description">
+                Enjoy the shade of our cherry trees as you join us during our spring time celebration. We invite you to
+                our
+                orchards for cherry, strawberry, and apple picking that is open all day. We end each evening with fresh,
+                vegetable centric dinners along with a live show from local musicians.
+            </div>
 
-        <!-- Second Image -->
+            <img class="second-package-image" src="Images/hamsterspring.jpg" alt="Full Bloom ">
 
+            <!-- third Image -->
+            <img class="third-package-image" src="Images/hamstercheese.jpg" alt="Beach Wedding">
 
-        <!-- Texts -->
-        <div class="second-package-title">Full Bloom Package</div>
-        <div class="second-package-price">Starting US $1,000.00</div>
-        <div class="second-package-description">
-            Enjoy the shade of our cherry trees as you join us during our spring time celebration. We invite you to our
-            orchards for cherry, strawberry, and apple picking that is open all day. We end each evening with fresh,
-            vegetable centric dinners along with a live show from local musicians.
-        </div>
-
-        <img class="second-package-image" src="Images/hamsterspring.jpg" alt="Full Bloom ">
-
-        <!-- third Image -->
-        <img class="third-package-image" src="Images/hamstercheese.jpg" alt="Beach Wedding">
-
-        <!-- Texts -->
-        <div class="third-package-title">Cheese and Seed Tour Package</div>
-        <div class="third-package-price">Starting US $1,200.00</div>
-        <div class="third-package-description">
-            Immerse yourself in the flavors of Cavia with our Cheese and Seed tour. We consulted with connoisseurs from
-            around the globe to bring you the best flavors that nature has to offer, and create our cheeses right here
-            at our local creamery. Cheese and seeds are served all day and nightly spa treatment is provided after
-            dinner.
+            <!-- Texts -->
+            <div class="third-package-title">Cheese and Seed Tour Package</div>
+            <div class="third-package-price">Starting US $1,200.00</div>
+            <div class="third-package-description">
+                Immerse yourself in the flavors of Cavia with our Cheese and Seed tour. We consulted with connoisseurs
+                from
+                around the globe to bring you the best flavors that nature has to offer, and create our cheeses right
+                here
+                at our local creamery. Cheese and seeds are served all day and nightly spa treatment is provided after
+                dinner.
+            </div>
         </div>
     </div>
     <!-- Amenities -->
-    <img src="Images/bg.jpg" alt="third picture" id="thirdImage">
-    <div id="ourAmenities">Amenities</div>
-    <div class="subExplaination">Here at La Petite Maison, we invite you to enjoy our services in hopes that you have the most relaxing stay we can provide.</div>
 
-    <img id="logo4" src="Images/24hour.png" alt="Scaled Image 4">
-    <img id="logo5" src="Images/breakfast.png" alt="Scaled Image 5">
-    <img id="logo6" src="Images/valet.png" alt="Scaled Image 6">
-    <img id="logo7" src="Images/pool.png" alt="Scaled Image 7">
-    <div id="logo4Detail">24 Hour Room Service</div>
-    <div id="logo5Detail">Complimentary Breakfast</div>
-    <div id="logo6Detail">Valet Parking</div>
-    <div id="logo7Detail">Beachside Pool</div>
 
-    <!-- Reserve -->
-  
-    <div class="solidBox">
-        <div id="reserveText">Reserve a Room</div>
-        <div id="checkin-text">Check-in</div>
-        <div id="checkin-box"></div>
-        <div id="checkout-text">Check-out</div>
-        <div id="checkout-box"></div>
-        <div id="guest-text">Number of Guests</div>
-        <div id="guest-box"></div>
-        <div id="room-text">Room Type</div>
-        <div id="room-box"></div>
-        <div><button id="checkButton">Check Availability</button></div>
+    <div id="amenitiesNav">
+        <img src="Images/bg.jpg" alt="third picture" id="thirdImage">
+        <div id="ourAmenities">Amenities</div>
+        <div class="subExplaination">Here at La Petite Maison, we invite you to enjoy our services in hopes that you
+            have
+            the most relaxing stay we can provide.</div>
+        <img id="logo4" src="Images/24hour.png" alt="Scaled Image 4">
+        <img id="logo5" src="Images/breakfast.png" alt="Scaled Image 5">
+        <img id="logo6" src="Images/valet.png" alt="Scaled Image 6">
+        <img id="logo7" src="Images/pool.png" alt="Scaled Image 7">
+        <div id="logo4Detail">24 Hour Room Service</div>
+        <div id="logo5Detail">Complimentary Breakfast</div>
+        <div id="logo6Detail">Valet Parking</div>
+        <div id="logo7Detail">Beachside Pool</div>
     </div>
+    <!-- Reserve -->
+
+    <div class="solidBox">
+        <div id="reserveNav">
+            <div id="reserveText">Reserve a Room</div>
+            <div id="checkin-text">Check-in</div>
+            <div id="checkin-box"></div>
+            <div id="checkout-text">Check-out</div>
+            <div id="checkout-box"></div>
+            <div id="guest-text">Number of Guests</div>
+            <div id="guest-box"></div>
+            <div id="room-text">Room Type</div>
+            <div id="room-box"></div>
+            <div><button id="checkButton">Check Availability</button></div>
+        </div>
+    </div>
+
     <img id="lastImage" src="Images/hamsterreserve.jpg" alt="Scaled last Image">
 
     <!-- Footer -->
@@ -193,7 +207,9 @@
         <div id="footerText">©LA PETITE MAISON HOTELS LIMITED 1939-2018. ALL RIGHTS RESERVED.</div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
 
 </body>
 
