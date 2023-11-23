@@ -5,3 +5,5 @@ Prototype Link
 Grading will be based on how close your website is to the prototype.
 
 Also you must make the website responsive. 
+
+Johnny Pham: Website looks good! try adding some fonts and responsiveness!
